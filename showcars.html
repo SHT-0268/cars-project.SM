@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Available Cars</title>
+    <link rel="icon" href="images/icon.png" type="image/icon">
+
+    <style>        
+        
+        * {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }     
+
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            background-color: #000;
+            color: white;
+            position: relative; 
+            padding-bottom: 100px; 
+        }
+
+        header {
+            background-color: #8B0000;
+            width: 100%;
+            position: fixed;
+            top: 0;
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .logo {
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .navigation a {
+            color: #ffffff;
+            text-decoration: none;
+            margin-left: 15px;
+            font-size: 1rem;
+            transition: color 0.3s ease;
+        }
+
+        .navigation a:hover {
+            color: #ffcccc;
+        }
+
+        .active {
+            color: #ffcccc;
+            font-weight: bold;
+        }
+
+        h1 {
+            margin-top: 80px; 
+            font-size: 2rem;
+        }
+
+        .car-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+            margin-bottom: 20px; 
+        }
+
+        .car-card {
+            background: #000;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+            padding: 15px;
+            text-align: center;
+            width: 250px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .car-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 6px 12px rgba(255, 255, 255, 0.2);
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        h2 {
+            font-size: 1.2rem;
+            margin: 10px 0;
+        }
+
+        p {
+            font-size: 0.9rem;
+            color: #bbb;
+        }
+
+        
+        button {
+            position: fixed;
+            bottom: 20px; 
+            left: 50%;
+            transform: translateX(-50%);
+            padding: 14px;
+            background-color: #8B0000;
+            color: #ffffff;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #e55347;
+        }
+
+        @media (max-width: 768px) {
+            .car-card {
+                width: 90%;
+            }
+
+            .navigation a {
+                font-size: 0.9rem;
+                margin-left: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo">DrivEzy</a>
+        <nav class="navigation">
+            <a href="showcars.html" class="active">Show Cars</a>
+            <a href="aboutus.html">About Us</a>
+            <a href="reserve.html">Reserve</a>
+            <a href="contact.html">Contact Us</a>
+            <a href="login.html">Sign In</a>
+            <a href="signup.html">Sign Up</a>
+        </nav>
+    </header>
+
+    <h1>Available Cars for Rent</h1>
+    <div class="car-container">
+        <div class="car-card">
+            <img src="images/car1.png" alt="Toyota Supra GR">
+            <h2>Toyota</h2>
+            <p>Number: 1</p>
+            <p>Model: Toyota Supra GR</p>
+            <p>Speed: 250 km/h</p>   
+            <p>Price: 1000 DH</p>
+            <p>Color: black</p>
+        </div>
+
+        <div class="car-card">
+            <img src="images/car2.png" alt="Toyota Supra GR">
+            <h2>Bugatti</h2>
+            <p>Number: 2</p>
+            <p>Model: Bugatti Chiron Super Sport</p>
+            <p>Speed: 490 km/h</p>   
+            <p>Price: 2000 DH</p>
+            <p>Color: blue</p>
+        </div>
+
+        <div class="car-card">
+            <img src="images/car3.jpg" alt="Toyota Supra GR">
+            <h2>BMW</h2>
+            <p>Number: 3</p>
+            <p>Model: BMW M5 CS</p>
+            <p>Speed: 350 km/h</p>   
+            <p>Price: 1000 DH</p>
+            <p>Color: black</p>
+        </div>
+
+        <div class="car-card">
+            <img src="images/car4.jpg" alt="Toyota Supra GR">
+            <h2>Mercedes</h2>
+            <p>Number: 4</p>
+            <p>Model: Mercedes-Benz S-Class</p>
+            <p>Speed: 205 km/h</p>   
+            <p>Price: 1500 DH</p>
+            <p>Color: black</p>
+        </div>
+
+        <div class="car-card">
+            <img src="images/car5.jpg" alt="Toyota Supra GR">
+            <h2>Audi</h2>
+            <p>Number: 5</p>
+            <p>Model: Audi RS e-tron GT</p>
+            <p>Speed: 250 km/h</p>   
+            <p>Price: 1200 DH</p>
+            <p>Color: black</p>
+        </div>
+
+        <div class="car-card">
+            <img src="images/car1.png" alt="Toyota Supra GR">
+            <h2>Porsche</h2>
+            <p>Number: 6</p>
+            <p>Model: Porsche 911 Turbo S</p>
+            <p>Speed: 330 km/h</p>   
+            <p>Price: 2200 DH</p>
+            <p>Color: black</p>
+        </div>
+
+    </div>
+
+    <a href="reserve.html">
+        <button>Réserver</button>
+    </a>
+
+</body>
+</html>
+

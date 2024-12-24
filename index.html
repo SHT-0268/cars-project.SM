@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="DrivEzy - Rent quality cars easily. Find your next rental car with us.">
+    <meta name="keywords" content="car rental, cars for rent, DrivEzy, quality cars">
+    <meta name="author" content="DrivEzy">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <title>DrivEzy Homepage</title>
+    <link rel="icon" type="image/jpg" href="images/icon.png" alt="DrivEzy logo">
+
+    <style>
+        * {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #e6e6e6;
+    color: #333333; 
+}
+
+header {
+    background-color:#8B0000 ; 
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    text-decoration: none;
+    color: #f2f2f2;
+    font-weight: 700;
+    font-size: 1.5em;
+    font-family: 'Poppins', sans-serif;
+}
+
+.navigation a {
+    color: #f2f2f2;
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: 500;
+    padding-left: 20px;
+}
+
+.navigation a:hover {
+    color: #b3b3b3;
+}
+
+.main {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: url(images/image.png) no-repeat center center;
+    background-size: cover; 
+    background-attachment: fixed; 
+    padding: 20px;
+}
+
+.main h2 {
+    color: #f2f2f2;
+    font-size: 2em;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.main h2 span {
+    color: #8B0000; 
+}
+
+.main h3 {
+    color: #f2f2f2;
+    font-size: 1em;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+.main-btn {
+    color: #f2f2f2;
+    background-color: #8B0000; 
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: 600;
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 35px;
+    margin-top: 20px;
+    transition: 0.3s ease;
+}
+
+.main-btn:hover {
+    background-color: #5c5c5c; 
+    transform: scale(1.1);
+}
+
+.social-icons a {
+    color: #f2f2f2;
+    font-size: 1.2em;
+    padding-right: 15px;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #b3b3b3;
+}
+
+.cards {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #f2f2f2;
+}
+
+.cards .title {
+    font-size: 1.8em;
+    margin-bottom: 30px;
+    color: #333333; 
+    text-transform: uppercase;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.icon {
+    background: #e6e6e6;
+    padding: 20px;
+    margin: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 10px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    width: 260px;
+    text-align: center;
+}
+
+.icon:hover {
+    transform: translateY(-10px);
+}
+
+.icon i {
+    font-size: 36px;
+    color: #8B0000; 
+    margin-bottom: 10px;
+}
+
+.icon h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: #333333; 
+}
+
+.icon p {
+    color: #666666;
+    font-size: 0.9em;
+    line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+    .car-card {
+        width: 90%;
+    }
+
+    .navigation a {
+        font-size: 0.9rem;
+        margin-left: 10px;
+    }
+}
+    </style>
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo" aria-label="Go to homepage">DrivEzy</a>
+        <nav class="navigation">
+            <a href="showcars.html">Show Cars</a>
+            <a href="aboutus.html">About Us</a>
+            <a href="reserve.html">Reserve</a>
+            <a href="contact.html">Contact Us</a>
+            <a href="login.html">Sign In</a>
+            <a href="signup.html">Sign Up</a>
+        </nav>
+    </header>
+
+    <section class="main">
+        <div>
+            <h2>Hello!<br><span>Welcome to the DrivEzy Service</span></h2>
+            <h3>Find and Rent Quality Cars Easily</h3>
+            <a href="showcars.html" class="main-btn" aria-label="Browse cars">Show Cars</a>
+            <div class="social-icons">
+                <a href="https://twitter.com" aria-label="Visit our Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="https://instagram.com" aria-label="Visit our Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="https://facebook.com" aria-label="Visit our Facebook"><i class="fab fa-facebook"></i></a>
+                <a href="mailto:contact@drivezy.com" aria-label="Send us an email"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

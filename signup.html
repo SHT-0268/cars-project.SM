@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="icon" href="images/icon.png" type="image/icon">
+    <style>
+        
+    * {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }         
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #000000;
+            color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        header {
+            background-color: #8B0000;
+            width: 100%;
+            position: fixed;
+            top: 0;
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        
+
+        .logo {
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .navigation a {
+            color: #ffffff;
+            text-decoration: none;
+            margin-left: 15px;
+            font-size: 1rem;
+            transition: color 0.3s ease;
+        }
+
+        .navigation a:hover {
+            color: #ffcccc;
+        }
+
+        .active {
+            color: #ffcccc;
+            font-weight: bold;
+        }
+
+        main {
+            margin-top: 80px;
+            text-align: center;
+            width: 100%;
+            max-width: 450px;
+            background-color: #282828;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        h1 {
+            color: #8B0000;
+            margin-bottom: 20px;
+        }
+
+        label {
+            font-weight: bold;
+            margin-bottom: 10px;
+            display: block;
+            text-align: left;
+        }
+
+        input {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 20px;
+            border: 1px solid #444;
+            border-radius: 5px;
+            background-color: #1e1e1e;
+            color: #ffffff;
+            font-size: 16px;
+        }
+
+        input::placeholder {
+            color: #aaaaaa;
+        }
+
+        input:focus {
+            border-color: #8B0000;
+            outline: none;
+        }
+
+        button {
+            width: 100%;
+            padding: 14px;
+            background-color: #8B0000;
+            color: #ffffff;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #e55347;
+        }
+
+        button:active {
+            background-color: #d84e3b;
+        }
+
+        .footer {
+            margin-top: 15px;
+            font-size: 14px;
+        }
+
+        .footer a {
+            color: #8B0000;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 480px) {
+            header {
+                padding: 10px 15px;
+            }
+
+            main {
+                padding: 20px;
+            }
+
+            button {
+                font-size: 14px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .car-card {
+                width: 90%;
+            }
+
+            .navigation a {
+                font-size: 0.9rem;
+                margin-left: 10px;
+            }
+        } 
+    </style>
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo">DrivEzy</a>
+        <nav class="navigation">
+            <a href="showcars.html">Show Cars</a>
+            <a href="aboutus.html">About Us</a>
+            <a href="reserve.html">Reserve</a>
+            <a href="contact.html">Contact Us</a>
+            <a href="login.html">Sign In</a>
+            <a href="signup.html" class="active">Sign Up</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Sign Up</h1>
+        <form action="submit_signup" method="post">
+
+            <label for="Last Name">Last Name:</label>
+            <input type="text" id="Last Name" name="Last Name" placeholder="Enter your last name" required>
+
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Enter your password" required>
+
+            <button type="submit">Sign Up</button>
+        </form>
+        <div class="footer">
+            <p>Already have an account? <a href="login.html">Log In</a></p>
+        </div>
+    </main>
+</body>
+</html>

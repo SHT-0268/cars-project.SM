@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="icon" href="images/icon.png" type="image/icon">
+
+    <style>
+        * {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }     
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #000000; 
+            margin: 0;
+            padding: 0;
+            color: #fff; 
+        }
+        
+        header {
+            background-color: #8B0000;
+            width: 100%;
+            position: fixed;
+            top: 0;
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .logo {
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .navigation a {
+            color: #ffffff;
+            text-decoration: none;
+            margin-left: 15px;
+            font-size: 1rem;
+            transition: color 0.3s ease;
+        }
+
+        .navigation a:hover {
+            color: #ffcccc;
+        }
+
+        .active {
+            color: #ffcccc;
+            font-weight: bold;
+        }
+
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 80%;
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: rgb(0, 0, 0); /*الوسط*/
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .text-content {
+            width: 50%;
+            padding: 20px;
+        }
+        .image-content {
+            width: 50%;
+            padding: 20px;
+        }
+        h1 {
+            font-size: 36px;
+            color: #8B0000;
+        }
+        .section h2 {
+            color: #8B0000;
+        }
+        .section p {
+            color: #a4a4a4;
+        }
+        img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        
+        @media (max-width: 768px) {
+            .car-card {
+                width: 90%;
+            }
+
+            .navigation a {
+                font-size: 0.9rem;
+                margin-left: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    
+    <header>
+        <a href="index.html" class="logo" aria-label="Go to homepage">DrivEzy</a>
+        <nav class="navigation">
+            <a href="showcars.html">Show Cars</a>
+            <a href="aboutus.html" class="active">About Us</a> 
+            <a href="reserve.html">Reserve</a>
+            <a href="contact.html">Contact Us</a>
+            <a href="login.html">Sign In</a>
+            <a href="signup.html">Sign Up</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="text-content">
+            <h1>About Us</h1>
+            <div class="section">
+                <h2>Who We Are?</h2>
+                <p>We are a team of passionate professionals specializing in car rentals, committed to providing a comfortable and safe driving experience for our customers through a diverse and up-to-date fleet of vehicles.</p>
+            </div>
+            <div class="section">
+                <h2>Our Vision</h2>
+                <p>Our vision is to become the first choice in the car rental market by offering innovative solutions that enhance the driving experience and meet the needs of our customers.</p>
+            </div>
+            <div class="section">
+                <h2>Our Commitment</h2>
+                <p>We are committed to delivering the highest standards of quality in car rental services, with a focus on customer comfort, safety, and environmental responsibility.</p>
+            </div>
+            <div class="section">
+                <h2>Our Objectives</h2>
+                <p>Our objectives include expanding our network of branches, innovating new services that meet the diverse needs of our customers, and providing added value to our clients in all the markets we serve.</p>
+            </div>
+        </div>
+        <div class="image-content">
+            <img src="images/us.png" alt="About Us Image">
+        </div>
+    </div>
+</body>
+</html>
